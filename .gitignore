@@ -1,0 +1,29 @@
+# Virtual environment (if using Python virtual environments)
+/venv
+/.venv
+media
+staticfiles
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Log files
+*.log
+
+# Database files
+*.sqlite3
+
+# Secret key settings
+*.secret
+*.key
+
+# IDE-specific settings (adjust to your IDE/editor)
+.idea/
+.vscode/
+
+# User-specific settings (adjust to your use case)
+*.iml
+*.swp
+*.swm
+*~
