@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core.views import CRUDView, PersonCreateView, PersonDeleteView, PersonUpdateView
+from core.views import CRUDView, CRUDAPIView, PersonCreateView, PersonDeleteView, PersonUpdateView
 
 urlpatterns = [
     path('', CRUDView.as_view(), name='index'),
+    path('persons/', CRUDAPIView.as_view(), name='persons'),
     path('person-create/', PersonCreateView.as_view(), name='person_create'),
     path('person-update/<int:person_id>/', PersonUpdateView.as_view(), name='person_update'),
     path('person-delete/', PersonDeleteView.as_view(), name='person_delete'),
